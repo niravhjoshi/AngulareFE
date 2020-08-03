@@ -1,1 +1,24 @@
-<p>earningtypes-list works!</p>
+<div class="row">
+  <div class="col-xs-12">
+
+    <hr>
+    <p>Earning Types List Component</p>
+    <div class="row">
+      <div class="col-xs-12">
+        <button class="btn btn-success">Add Earning Type</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="card" style="width: 18rem;" *ngFor="let earype of earningtypes">
+        <img [src]=""  alt="" class="card-img-top">
+        <a href="#" class="list-group-item clearfix" >
+          <div class="pull-left">
+            <h5 class="card-title">{{earype.EarningTypeName}}</h5>
+            <p class="card-text">{{earype.CreateDate}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

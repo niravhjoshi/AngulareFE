@@ -1,1 +1,14 @@
-<p>persons works!</p>
+<div class="row">
+  <div class="col-md-auto">
+      <app-persons-list
+        (List_PersonWasSelected_EE)="selectedPerson = $event"
+      >
+      </app-persons-list>
+  </div>
+  <div class="col-md-auto">
+      <app-person-detail *ngIf="selectedPerson; else infoText" [person]="selectedPerson"></app-person-detail>
+      <ng-template #infoText>
+        <p>Please select Person</p>
+      </ng-template>
+  </div>
+</div>

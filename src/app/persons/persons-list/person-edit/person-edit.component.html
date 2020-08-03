@@ -1,1 +1,37 @@
-<p>person-edit works!</p>
+<div class="row">
+  <div class="col-xl-12">
+    <form>
+      <div class="row">
+        <label for="PersonName">PersonName</label>
+        <input  type="text" id="PersonName" class="form-control" #PerFullName>
+      </div>
+      <div class="row">
+        <label for="peremail">Email</label>
+        <input  type="email" id="peremail" class="form-control" #PerEmail>
+      </div>
+      <div class="row">
+        <label for="Bdate">BirthDate</label>
+        <input  type="date" id="Bdate" class="form-control" #PerBDate>
+      </div>
+      <div class="row">
+
+
+        <div class="form-group">
+          <label for="GenSel1">Select Gender:</label>
+          <select class="form-control" id="GenSel1" #PerGen>
+            <option>Male</option>
+            <option>Female</option>
+            <option>None</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12">
+        <button class="btn badge-success" type="submit" (click)="AddPersontoArray()">Add Person</button>
+          <button class="btn badge-danger" type="button">Delete Person</button>
+          <button class="btn badge-primary" type="button">Clear</button>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>

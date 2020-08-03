@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  loadedLink='Person';
 
+  onPageNavigate(ClickLinked: string){
+  this.loadedLink = ClickLinked;
+  }
 }

@@ -1,1 +1,38 @@
-<p>earning-list works!</p>
+<div class="row">
+  <div class="col-xs-12">
+
+    <hr>
+    <p>Earning List Component</p>
+    <div class="row">
+      <div class="col-xs-12">
+        <button class="btn btn-success">Add Earning</button>
+      </div>
+    </div>
+    <hr>
+
+    <table class="table table-hover">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Earning Type</th>
+        <th scope="col">Person Name</th>
+        <th scope="col">Earning Amount</th>
+        <th scope="col">Comment</th>
+        <th scope="col">CreateDate</th>
+        <th scope="col">Doc URL</th>
+      </tr>
+      </thead>
+      <tbody *ngFor="let ear of Earnings">
+      <tr>
+        <th scope="row">{{ear.CreateUID}}</th>
+        <td>{{ear.EarnType}}</td>
+        <td>{{ear.PerName}}</td>
+        <td>{{ear.EarnAmt}}</td>
+        <td>{{ear.EarnComm}}</td>
+        <td>{{ear.CreateDate}}</td>
+        <td>{{ear.DocPath}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,1 +1,23 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-warning ">
+  <div class="container-fluid">
+<!--  <div class="navbar-text">-->
+<!--    <a href="#" class="navbar-brand">Manage Person</a>-->
+<!--  </div>-->
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" ><a href="#" (click)="onselect('Person')" class="nav-link" >Person List</a></li>
+      <li class="nav-item" ><a href="#" (click)="onselect('EarningTypes')" class="nav-link">EarningTypes List</a></li>
+      <li class="nav-item"><a href="#" (click)="onselect('Earnings')" class="nav-link">Earning List</a></li>
+    </ul>
+    <ul class=" nav navbar-nav ml-auto">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" role="button">Manage</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Login Email</a> </li>
+          <li><a href="#">Login Google</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>

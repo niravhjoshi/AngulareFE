@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AgularAppFE"
+    }
+  },
+  "defaultProject": "AgularAppFE",
+  "cli": {
+    "analytics": "eb35f58e-d4f6-4d35-a912-738e56133e16"
+  }
 }

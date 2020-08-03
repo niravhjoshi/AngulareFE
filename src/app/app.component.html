@@ -1,10 +1,11 @@
+<app-header (LinkSelected)="onPageNavigate($event)"></app-header>
 <div class="container">
-  <div class="row">
+
     <div class="col-md-12">
-      <h2>Welcome to E2ISA App Root</h2>
-      <app-persons></app-persons>
-      <app-earningtypes></app-earningtypes>
-      <app-earning></app-earning>
+
+      <app-persons *ngIf="loadedLink==='Person'"></app-persons>
+      <app-earningtypes *ngIf="loadedLink==='EarningTypes'"></app-earningtypes>
+      <app-earning *ngIf="loadedLink==='Earnings'"></app-earning>
     </div>
   </div>
-</div>
+

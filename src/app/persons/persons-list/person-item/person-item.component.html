@@ -1,1 +1,22 @@
-<p>person-item works!</p>
+<div class="row">
+<!--  <div class="col-xs-12">-->
+
+    <div class="row">
+      <div class="card"  (click)="OnClickedPerson_item()" style="width: 12rem;">
+        <img [src]="per.ImageURL"
+             alt="{{per.FullName}}" class="card-img-top" style="">
+
+        <a href="#" class="list-group-item clearfix" >
+          <div class="pull-left">
+            <h5 class="card-title">{{per.FullName}}</h5>
+            <p class="card-text">{{per.Sex}}</p>
+            <p class="card-text">{{per.BirthDate}}</p>
+            <p class="card-text">{{per.Email}}</p>
+          </div>
+
+        </a>
+
+      </div>
+    </div>
+  </div>
+<!--</div>-->

@@ -1,1 +1,15 @@
-<p>persons-list works!</p>
+
+<hr>
+<p>Person List Component</p>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">Add Person</button>
+  </div>
+</div>
+<hr>
+<app-person-item
+  *ngFor="let perEl of persons"
+  [per]="perEl"
+  (person_item_Selected_EE) = "List_OnSelectedPerson(perEl)">
+</app-person-item>
+<app-person-edit (PersonAddedEventEmit)="onPersonAdded($event)"></app-person-edit>

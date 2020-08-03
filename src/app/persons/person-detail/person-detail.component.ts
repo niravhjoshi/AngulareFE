@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Person} from "../person.model";
 
 @Component({
   selector: 'app-person-detail',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./person-detail.component.css']
 })
 export class PersonDetailComponent implements OnInit {
-
+  @Input() person: Person;
   constructor() { }
 
   ngOnInit(): void {

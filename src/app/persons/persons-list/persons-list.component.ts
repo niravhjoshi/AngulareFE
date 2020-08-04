@@ -8,7 +8,7 @@ import {Person} from "../person.model";
 })
 export class PersonsListComponent implements OnInit {
 
-@Output() List_PersonWasSelected_EE  = new EventEmitter<Person>();
+@Output() Op_Lsnr_PersonWasSelected_EE  = new EventEmitter<Person>();
 
 persons: Person[] =[
   new Person('ABC-123','Nirav Joshi','Male',
@@ -23,8 +23,8 @@ persons: Person[] =[
   ngOnInit(): void {
   }
 
-  List_OnSelectedPerson(SelPer:Person){
-  this.List_PersonWasSelected_EE.emit(SelPer);
+  Lsnr_OnSelectedPerson(SelPer:Person){
+  this.Op_Lsnr_PersonWasSelected_EE.emit(SelPer);
   }
 
   onPersonAdded(person: Person){

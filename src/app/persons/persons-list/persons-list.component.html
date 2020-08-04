@@ -10,6 +10,6 @@
 <app-person-item
   *ngFor="let perEl of persons"
   [per]="perEl"
-  (person_item_Selected_EE) = "List_OnSelectedPerson(perEl)">
+  (person_item_Selected_EE) = "Lsnr_OnSelectedPerson(perEl)">
 </app-person-item>
 <app-person-edit (PersonAddedEventEmit)="onPersonAdded($event)"></app-person-edit>
